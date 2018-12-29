@@ -8,8 +8,11 @@ const Footer = () => (
             <a 
                 href="https://github.com/mattrudin" 
                 target="_blank" 
-                rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /> 
-                MattRudin
+                rel="noopener noreferrer">
+                    <FontAwesomeIcon 
+                        icon={faGithub}
+                        size='1x' /> 
+                    MattRudin
             </a>
             , MADE IN BASLE / LUCERNE
         </p>
