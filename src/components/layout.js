@@ -4,6 +4,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 
 import './layout.css'
+import Footer from './footer'
 
 const LAYOUT_QUERY = graphql`
   query SiteTitleQuery {
@@ -29,6 +30,10 @@ const LayoutWrapper = styled.div`
     font-weight: 700;
     font-size: 2em;
   }
+  a {
+    text-decoration: none;
+    color: #000066;
+  }
   @media only screen and (min-width: 600px) {
     font-size: 120%;
   }
@@ -41,9 +46,7 @@ const Layout = ({ children }) => (
       <>
         <LayoutWrapper>
           {children}
-          <footer>
-            <p>© MattRudin, MADE IN BASLE / LUCERNE</p>
-          </footer>
+          <Footer />
         </LayoutWrapper>
       </>
     )}
