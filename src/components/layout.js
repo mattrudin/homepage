@@ -4,17 +4,19 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import './layout.css'
 
+const LAYOUT_QUERY = graphql`
+  query SiteTitleQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+  `
+
 const Layout = ({ children }) => (
   <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `}
+    query={LAYOUT_QUERY}
     render={data => (
       <>
         <div
