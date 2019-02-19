@@ -23,6 +23,7 @@
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
+    "react-grid-hover": "0.0.2",
     "react-helmet": "^5.2.0",
     "styled-components": "^4.1.3"
   },
