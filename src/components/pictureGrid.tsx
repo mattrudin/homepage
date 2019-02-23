@@ -8,7 +8,7 @@ const config = {
     scaleFactor: 1.5, */
 };
 
-const pictureContainer = (props) => (
+const pictureGrid = (props) => (
 	<Container>
 		<ReactGridHover {...config}>
 			<img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="js logo" />
@@ -25,4 +25,4 @@ const pictureContainer = (props) => (
 	</Container>
 );
 
-export default pictureContainer;
+export default pictureGrid;

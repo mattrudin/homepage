@@ -1,7 +1,7 @@
 import React from 'react';
 import Container from './container';
 
-const StartContainer = (props) => (
+const Intro = (props) => (
 	<Container>
 		<h1>Matt Rudin</h1>
 		<p>Build modern apps and websites with</p>
@@ -9,4 +9,4 @@ const StartContainer = (props) => (
 	</Container>
 );
 
-export default StartContainer;
+export default Intro;

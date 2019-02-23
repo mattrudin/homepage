@@ -24,7 +24,6 @@ const LayoutWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   h1 {
     font-family: Segoe UI;
     font-weight: 700;
