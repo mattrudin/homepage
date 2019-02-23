@@ -2,7 +2,7 @@ import React from 'react';
 import Container from './container';
 
 const Playground = (props) => (
-	<Container>
+	<Container idName="playground">
 		<h1>Playground</h1>
 	</Container>
 );

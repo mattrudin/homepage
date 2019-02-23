@@ -5,6 +5,7 @@ import styled from 'styled-components'
 
 import './layout.css'
 import Footer from './footer'
+import { gridAreaSelectors, mediaMin600px } from './layoutUtility'
 
 const LAYOUT_QUERY = graphql`
   query SiteTitleQuery {
@@ -15,27 +16,25 @@ const LAYOUT_QUERY = graphql`
     }
   }
   `
-
-const LayoutWrapper = styled.div`
+  
+  const LayoutWrapper = styled.div`
   font-family: sans-serif;
   font-size: 80%;
   color: #373737;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
   h1 {
     font-family: Segoe UI;
     font-weight: 700;
     font-size: 2em;
   }
+
   a {
     text-decoration: none;
     color: #000066;
   }
-  @media only screen and (min-width: 600px) {
-    font-size: 120%;
-  }
+  
+  ${gridAreaSelectors}
+  ${mediaMin600px}
 `
 
 const Layout = ({ children }) => (
