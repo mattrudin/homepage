@@ -9,7 +9,7 @@ const config = {
 };
 
 const pictureGrid = (props) => (
-	<Container idName="picture-grid">
+	<Container idName="picture-grid" alignItems="center">
 		<ReactGridHover {...config}>
 			<img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="js logo" />
 			<img
