@@ -1,3 +1,5 @@
+import { createGlobalStyle } from 'styled-components';
+
 export const gridAreaSelectors = `
     #intro {
         grid-area: intro;
@@ -35,4 +37,25 @@ export const mediaMin600px = `
         "playground playground"
         "about-site about-me";
     }
+`;
+
+export const GlobalStyle = createGlobalStyle`
+body {
+    margin: 10px;
+    font-family: sans-serif;
+    font-size: 80%;
+    color: #373737;
+}
+  
+
+h1 {
+  font-family: Segoe UI;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+a {
+  text-decoration: none;
+  color: #000066;
+}
 `;
